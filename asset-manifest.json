@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/draggable.github.io/static/css/main.f2d85e92.css",
+    "main.js": "/draggable.github.io/static/js/main.63878fa5.js",
+    "static/js/787.6c4d6c25.chunk.js": "/draggable.github.io/static/js/787.6c4d6c25.chunk.js",
+    "static/media/drag.png": "/draggable.github.io/static/media/drag.949375ebdc13630bf6b0.png",
+    "index.html": "/draggable.github.io/index.html",
+    "main.f2d85e92.css.map": "/draggable.github.io/static/css/main.f2d85e92.css.map",
+    "main.63878fa5.js.map": "/draggable.github.io/static/js/main.63878fa5.js.map",
+    "787.6c4d6c25.chunk.js.map": "/draggable.github.io/static/js/787.6c4d6c25.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f2d85e92.css",
+    "static/js/main.63878fa5.js"
+  ]
+}
