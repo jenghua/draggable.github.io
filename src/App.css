@@ -7,6 +7,11 @@
   pointer-events: none;
 }
 
+@font-face {
+  font-family: 'dfhsiuw3';
+  src: url('../public/dfhsiuw3-b5.ttf') format('truetype');
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
