@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/drag/static/css/main.05e69d8f.css",
+    "main.css": "/drag/static/css/main.7f4f9e77.css",
     "main.js": "/drag/static/js/main.967ad5a7.js",
     "static/js/787.6c4d6c25.chunk.js": "/drag/static/js/787.6c4d6c25.chunk.js",
     "static/media/elegant.otf": "/drag/static/media/elegant.93b78d67023703da8df3.otf",
-    "static/media/_w3.ttf": "/drag/static/media/_w3.f1bf4cea03e809e279f3.ttf",
+    "static/media/w3.ttf": "/drag/static/media/w3.f1bf4cea03e809e279f3.ttf",
     "static/media/drag.png": "/drag/static/media/drag.949375ebdc13630bf6b0.png",
     "static/media/Trajan-Regular.ttf": "/drag/static/media/Trajan-Regular.52750acdceb5610d4a52.ttf",
     "static/media/Sacramento-Regular.ttf": "/drag/static/media/Sacramento-Regular.e8c87b94a9bae9bc1366.ttf",
     "static/media/amazon.ttf": "/drag/static/media/amazon.f46d9f2dc52e278e2cea.ttf",
     "index.html": "/drag/index.html",
-    "main.05e69d8f.css.map": "/drag/static/css/main.05e69d8f.css.map",
+    "main.7f4f9e77.css.map": "/drag/static/css/main.7f4f9e77.css.map",
     "main.967ad5a7.js.map": "/drag/static/js/main.967ad5a7.js.map",
     "787.6c4d6c25.chunk.js.map": "/drag/static/js/787.6c4d6c25.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.05e69d8f.css",
+    "static/css/main.7f4f9e77.css",
     "static/js/main.967ad5a7.js"
   ]
 }
