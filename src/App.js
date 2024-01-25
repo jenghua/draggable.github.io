@@ -66,7 +66,10 @@ function App() {
   };
 
   return (
-    <div className="container">
+
+    // 如果超過畫面大小，則隱藏
+    
+    <div className="container overflow-hidden">
       <div className="logo-container">
         <img ref={imageRef} src={process.env.PUBLIC_URL + '/dawoodesign.png'} alt="Logo" />
       </div>
