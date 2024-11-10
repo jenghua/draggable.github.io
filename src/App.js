@@ -3,9 +3,7 @@ import Draggable from 'react-draggable';
 import html2canvas from 'html2canvas';
 import './App.css';
 
-
 function App() {
-  
   const [text, setText] = useState('');
   const [fontSize, setFontSize] = useState(24);
   const [fontFamily, setFontFamily] = useState('');
@@ -33,7 +31,6 @@ function App() {
   const handleFontFamilyChange = (event) => {
     setFontFamily(event.target.value);
   };
-
 
   const handleFontSizeChange = (event) => {
     setFontSize(event.target.value);
@@ -66,16 +63,13 @@ function App() {
   };
 
   return (
-
-    // 如果超過畫面大小，則隱藏
-    
     <div className="container overflow-hidden">
-      <div className="logo-container">
-        <img ref={imageRef} src={process.env.PUBLIC_URL + '/dawoodesign.png'} alt="Logo" />
+      <div className="logo-container text-center">
+        <img ref={imageRef} src={process.env.PUBLIC_URL + '/dawoodesign.png'} alt="Logo" className="img-fluid" />
       </div>
       <div className="row mt-5 mb-5">
-        <div className="image-container col-xl-6">
-          <Draggable position={position} onDrag={handleDrag}  nodeRef={draggableRef}>
+        <div className="image-container col-12 col-xl-6 mb-4 mb-xl-0">
+          <Draggable position={position} onDrag={handleDrag} nodeRef={draggableRef}>
             <div ref={draggableRef}>
               <div style={{ display: 'inline-block', cursor: 'move', fontSize: `${fontSize}px`, fontFamily: fontFamily, transform: `rotate(${rotation}deg)` }}>
                 {text}
@@ -83,7 +77,7 @@ function App() {
             </div>
           </Draggable>
         </div>
-        <div className="col-xl-6 p-4">
+        <div className="col-12 col-xl-6 p-4">
           <div className="row mb-3">
             <div className="col-sm-2 col-form-label">
               <label>輸入文字:</label>
@@ -91,14 +85,16 @@ function App() {
             <div className="col-auto">
               <input id="inputText" type="text" className="form-control mr-2" />
             </div>
-            <div className="col-auto"> <button onClick={handleAddText} className="btn btn-primary">添加文字</button> </div>
+            <div className="col-auto">
+              <button onClick={handleAddText} className="btn btn-primary">添加文字</button>
+            </div>
           </div>
           <div className="row mb-3">
             <div className="col-sm-2 col-form-label">
               <label>文字大小:</label>
             </div>
             <div className="col-auto">
-              <input id="inputFontSize" type="range" min="16" max="32" value={fontSize} onChange={handleFontSizeChange} className="form-control-range"/>
+              <input id="inputFontSize" type="range" min="12" max="48" value={fontSize} onChange={handleFontSizeChange} className="form-control-range" />
               <span>{fontSize}px</span>
             </div>
           </div>
@@ -107,7 +103,7 @@ function App() {
               <label>旋轉:</label>
             </div>
             <div className="col-auto">
-              <input id="inputRotation" type="range" min="0" max="360" value={rotation} onChange={handleRotationChange} className="form-control-range"/> {/* 新增旋轉輸入範圍 */}
+              <input id="inputRotation" type="range" min="0" max="360" value={rotation} onChange={handleRotationChange} className="form-control-range" />
               <span>{rotation}°</span>
             </div>
           </div>
@@ -131,8 +127,8 @@ function App() {
       </div>
       <footer className="align-items-end text-center">
         <p>&copy; {new Date().getFullYear()} DaWood Design.</p>
-      </footer> 
-      </div>
+      </footer>
+    </div>
   );
 }
 
