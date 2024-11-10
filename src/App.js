@@ -94,7 +94,7 @@ function App() {
               <label>文字大小:</label>
             </div>
             <div className="col-auto">
-              <input id="inputFontSize" type="range" min="12" max="48" value={fontSize} onChange={handleFontSizeChange} className="form-control-range" />
+              <input id="inputFontSize" type="range" min="12" max="36" value={fontSize} onChange={handleFontSizeChange} className="form-control-range" />
               <span>{fontSize}px</span>
             </div>
           </div>
